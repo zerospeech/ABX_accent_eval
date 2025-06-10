@@ -1,40 +1,59 @@
 
 
-Data evaluation
-===============
-   
-Organization
--------------
+ABX Accent Evaluation
+=====================
+ 
+This toolkit supports accent-based ABX evaluation on the AESRC* (Accented English Speech Recognition Challenge) dataset using fastABX.
 
-The main modules and submodules:
--Prepare: for data preparation
-- [fastABX](https://github.com/bootphon/ABX-accent/tree/main/abx-accent/scripts/eval/fastABX) 
-
-- [generate_item_files](https://github.com/bootphon/ABX-accent/tree/main/abx-accent/scripts/eval/generate_item_files)
-
-
-
-Installation
+What It Does
 ------------
+ - Prepares evaluation lists for accent discrimination tasks.
 
-The recommended installation on Linux and macOS is using [conda](https://docs.conda.io/en/latest/miniconda.html).
+ - Computes ABX error rates across and within speakers.
 
-  `conda install -c coml abx`
 
-Alternatively, you may want to install it from sources. First clone
-this repository and go to its root directory. Then :
+Getting Started
+---------------
+1. Download AESRC dataset (requires request via this [website](https://www.nexdata.ai/company/sponsored-datasets)).
 
-     conda env create -n abx -f environment.yml
-     source activate abx
-     make install
-     make test
-     - Prepare scripts:
-       - data_splits:
-         aesrc_dataset_split.py
-         aesrc_gender_split.py
-      
-    - eval scripts:
-      - [fastABX](https://github.com/bootphon/fastabx)
-       - convert_all_features.sh
-       - run_fastabx.py
-    
+2. Organize it into the expected directory structure:
+   eval/
+  ├── scripts/
+  │   ├── prepare/        # list generation
+  │   └── evals/          # fastABX invocation
+  └── data/
+      ├── prepare/
+      └── evals/          # contains .item, .score, output structure
+
+4. Execute the scripts:
+ scripts/evals/... to run fastABX and average resulting scores.
+   - [fastABX](https://github.com/bootphon/ABX-accent/tree/main/abx-accent/scripts/eval/fastABX) 
+   - [generate_item_files](https://github.com/bootphon/ABX-accent/tree/main/abx-accent/scripts/eval/generate_item_files)
+
+
+
+Evaluation Modes
+----------------
+Across-speaker vs Within-speaker discrimination.
+
+Within-context vs Any-context context conditioning.
+
+Requirements
+------------
+Linux/macOS (Ubuntu 16.04+, tested on Debian/CentOS).
+
+fastABX and necessary Python dependencies installed.
+
+ Results
+ -------
+Output includes:
+
+.item files (phoneme timestamps and labels for evaluation).
+
+.abx_score and .abx_score_average folders with ABX error metrics for dev/test.
+
+References
+----------
+Shi et al. (ICASSP 2021): AESRC dataset and challenge.
+
+Poli et al., fastabx: efficient ABX discriminability computation 
