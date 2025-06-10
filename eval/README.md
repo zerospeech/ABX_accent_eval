@@ -21,8 +21,8 @@ Getting Started
 4. Execute the scripts:
  scripts/evals/... to run fastABX and average resulting scores.
 ```
-   - [fastABX](https://github.com/bootphon/ABX-accent/tree/main/abx-accent/scripts/eval/fastABX) 
-   - [generate_item_files](https://github.com/bootphon/ABX-accent/tree/main/abx-accent/scripts/eval/generate_item_files)
+  [fastABX](https://github.com/bootphon/ABX-accent/tree/main/abx-accent/scripts/eval/fastABX) 
+  [generate_item_files](https://github.com/bootphon/ABX-accent/tree/main/abx-accent/scripts/eval/generate_item_files)
 ```
 
 
