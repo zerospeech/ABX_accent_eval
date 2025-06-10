@@ -2,8 +2,6 @@
 """
 Project: ABX-accent
 Corpus: AESRC
-2022
-
 This script generates an ABX item file from the AESRC corpus using alignment data.
 It converts alignment files into item files suitable for ABX discrimination tasks.
 """
