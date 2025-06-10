@@ -12,6 +12,6 @@ This workflow uses [bootphon/fastabx](https://github.com/bootphon/fastabx).
    ```
 2. **Run ABX Evaluation**
 Execute the ABX evaluation script:
-  ```bash
-  uv run run_fastabx.py
-  ```
+   ```bash
+   uv run run_fastabx.py
+   ```
