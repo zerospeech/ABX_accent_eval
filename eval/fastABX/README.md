@@ -6,9 +6,13 @@ This workflow is based on [bootphon/fastabx](https://github.com/bootphon/fastabx
 
 1. **Convert features**
    Run the conversion script to transform `.h5f` feature files:v
-   This script uses [`convert_features.py`](https://github.com/bootphon/fastabx/blob/main/scripts/convert_features.py).
+   This script uses
 
-2. **Run ABX evaluations**
+   ```bash
+   convert_features.py
+   ```
+   
+3. **Run ABX evaluations**
    Execute:
 
    ```bash
