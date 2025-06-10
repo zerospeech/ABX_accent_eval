@@ -17,19 +17,13 @@ Getting Started
 1. Download AESRC dataset (requires request via this [website](https://www.nexdata.ai/company/sponsored-datasets)).
 
 2. Organize it into the expected directory structure:
-   eval/
-  ├── scripts/
-  │   ├── prepare/        # list generation
-  │   └── evals/          # fastABX invocation
-  └── data/
-      ├── prepare/
-      └── evals/          # contains .item, .score, output structure
 
 4. Execute the scripts:
  scripts/evals/... to run fastABX and average resulting scores.
+```
    - [fastABX](https://github.com/bootphon/ABX-accent/tree/main/abx-accent/scripts/eval/fastABX) 
    - [generate_item_files](https://github.com/bootphon/ABX-accent/tree/main/abx-accent/scripts/eval/generate_item_files)
-
+```
 
 
 Evaluation Modes
