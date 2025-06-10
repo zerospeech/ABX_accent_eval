@@ -3,7 +3,7 @@
 ABX Accent Evaluation
 =====================
  
-This toolkit supports accent-based ABX evaluation on the AESRC* (Accented English Speech Recognition Challenge) dataset using fastABX.
+This toolkit supports accent-based ABX evaluation on the AESRC (Accented English Speech Recognition Challenge) dataset using fastABX.
 
 What It Does
 ------------
@@ -24,6 +24,7 @@ Getting Started
   fastABX
   generate_item_files
 ```
+* you can get all the item and features files in [this github](https://github.com/bootphon/ABX-accent/tree/main/abx-accent/data/eval) repository.
 
 
 Evaluation Modes
