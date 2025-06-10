@@ -1,25 +1,17 @@
 # ABX Evaluation with FastABX
 
-This workflow is based on [bootphon/fastabx](https://github.com/bootphon/fastabx).
+This workflow uses [bootphon/fastabx](https://github.com/bootphon/fastabx).
 
-### From `.h5f` Feature Files
+## From `.h5f` Feature Files
 
-1. **Convert features**
-   Run the conversion script to transform `.h5f` feature files:v
-   This script uses
+1. **Convert Features**  
+   Transform `.h5f` feature files using the conversion script:
 
    ```bash
    convert_features.py
    ```
-   
-3. **Run ABX evaluations**
-   Execute:
-
-   ```bash
-   uv run run_fastabx.py
-   ```
-
-   
-
-
-
+2. **Run ABX Evaluation**
+Execute the ABX evaluation script:
+  ```bash
+  uv run run_fastabx.py
+  ```
